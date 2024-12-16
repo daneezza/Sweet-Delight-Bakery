@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Delights Bakery</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+        header {
+            background: #ff6f61;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        .gallery {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+        .gallery-item {
+            margin: 10px;
+            width: 200px;
+        }
+        .gallery img {
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+        .gallery-item p {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        .links {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .links a {
+            margin: 0 10px;
+            color: #ff6f61;
+            text-decoration: none;
+        }
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+            .gallery img {
+                width: 150px;
+                height: 150px;
+            }
+        }
+        .menu-highlight {
+            opacity: 1;
+            transition: opacity 0.5s ease;
+        }
+        .menu-highlight:hover {
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sweet Delights Bakery</h1>
+    </header>
+
+    <div class="container">
+        <h2>Our Delicious Offerings</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="cake.jpg" alt="Cake" class="menu-highlight">
+                <p>Birthday Cake</p>
+            </div>
+            <div class="gallery-item">
+                <img src="cookies.jpg" alt="Cookies" class="menu-highlight">
+                <p>Chocolate Cookies</p>
+            </div>
+            <div class="gallery-item">
+                <img src="fruit pastry.jpg" alt="Pastry" class="menu-highlight">
+                <p>Fruit Pastry</p>
+            </div>
+            <div class="gallery-item">
+                <img src="artisan.jpg" alt="Bread" class="menu-highlight">
+                <p>Artisan Bread</p>
+            </div>
+            <div class="gallery-item">
+                <img src="velvet.jpg" alt="Cupcakes" class="menu-highlight">
+                <p>Red Velvet Cupcakes</p>
+            </div>
+        </div>
+
+        <h2>Our Popular Menu Items</h2>
+        <ul>
+            <li>Classic Vanilla Cake</li>
+            <li>Chocolate Chip Cookies</li>
+            <li>Fruit Tarts</li>
+            <li>Sourdough Bread</li>
+            <li>Red Velvet Cupcakes</li>
+        </ul>
+
+        <h2>Pricing Table</h2>
+        <table>
+            <tr>
+                <th>Item</th>
+                <th>Price</th>
+                <th>Serves</th>
+            </tr>
+            <tr>
+                <td>Classic Cake</td>
+                <td>$25</td>
+                <td>8-10 people</td>
+            </tr>
+            <tr>
+                <td>Dozen Cookies</td>
+                <td>$15</td>
+                <td>12 cookies</td>
+            </tr>
+            <tr>
+                <td>Fruit Tart</td>
+                <td>$18</td>
+                <td>6 people</td>
+            </tr>
+        </table>
+
+        <div class="links">
+            <a href="#" onclick="showContactInfo()">Contact Us</a>
+            <a href="#">About Us</a>
+            <a href="#">Order Online</a>
+            <a href="#">Catering</a>
+            <a href="#">Gift Cards</a>
+        </div>
+    </div>
+
+    <script>
+        function showContactInfo() {
+            alert('Call us at: (555) 123-4567\nEmail: info@sweetdelights.com\nAddress: 123 Bakery Lane');
+        }
+    </script>
+</body>
+</html>
